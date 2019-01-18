@@ -1,0 +1,512 @@
+/*!
+ * Start Bootstrap - Resume v5.0.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+
+
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #868e96;
+}
+
+.picrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.piccolumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.piccolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:18vw;
+  height:auto;
+}
+
+@media screen and (max-width: 800px) {
+  .piccolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .piccolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@font-face {
+  font-family: headerrr;
+  src: url(lady_starlight/ladystarlight.ttf);
+}
+
+
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 270px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  /*color: #343a40;ORIGINAL*/
+  color: #9c260d;
+}
+
+hr {
+
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 6.5rem;
+}
+
+h2 {
+  font-size: 5.85rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+  color:#bd5d38;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  color:#932f29 !important;
+  background-color:#932f2980;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.85rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  filter:brightness(1.15);
+}
+
+.dev-icons {
+  font-size: 3rem;
+  color:#bd5d38;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #9c260d;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 270px;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 200px;
+    max-height: 15rem;
+    /* border: 0.5rem solid rgba(255, 255, 255, 0.2); */
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  /*max-width: 75rem; DEFAULT WAY*/
+  max-width:calc(100vw - 250px);
+}
+
+section.resume-section2 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  /*max-width: 75rem; DEFAULT WAY*/
+  max-width:calc(100vw - 250px);
+}
+
+.parallax {
+
+            /* Create the parallax scrolling effect  size was cover before*/
+            background-attachment: fixed;
+            background-position: center;
+            /*background-repeat: no-repeat;*/
+            background-repeat: repeat;
+            background-size: cover;
+           /* width: 100vw !important; */
+           padding: 0;
+           margin: 0;
+
+           max-width: calc(100vw - 250px);
+           height: 45vh;
+        }
+
+section.resume-section .resume-item .resume-date section.resume-section2  {
+  min-width: none;
+}
+
+@media (min-width: 200px) {
+  section.resume-section {
+    min-height: 100vh;
+    max-width: 75rem;
+  }
+
+  section.resume-section2 {
+    min-height: 80vh;
+    max-width: 75rem;
+  }
+
+  section.resume-section3 {
+    min-height: 60vh;
+    max-width: 75rem;
+  }
+
+.parallax {
+    min-height: 100vh;
+    max-width: 75rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+    max-width: 75rem;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+
+  section.resume-section3 {
+    min-height: 60vh;
+  }
+.parallax {
+    min-height: 100vh;
+    max-width: 75rem !important;
+    min-width: 18rem;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+    .anchor{
+      display: block;
+      height: 115px; /*same height as header*/
+      margin-top: -20vh; /*same height as header*/
+      /* visibility: hidden; */
+      }
+
+      /* The Modal (background) */
+      .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          margin-left: 0px;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(17, 8, 8,0.9); /* Black w/ opacity */
+      }
+
+      .modal img {
+        width:60%;
+        height:auto;
+      }
+}
+
+@media only screen and (max-width: 800px) {
+  .modal img {
+    width: 80%;
+    height: auto;
+  }
+
+  .piccolumn img {
+    width: 46vw;
+    height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .modal img {
+    width: 90%;
+    height: auto;
+  }
+
+  .piccolumn img {
+    width: 94vw;
+    height: auto;
+  }
+
+  .anchor {
+    padding-top:20vh;
+  }
+
+  .parallax {
+    width: 100vw !important;
+  }
+
+  .imgbwtocolor:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+     /* Firefox 10+, Firefox on Android */
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%) brightness(1.1) contrast(.6);
+      filter: gray;
+      /* IE 6-9 */
+      -moz-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      -webkit-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+	}
+
+
+
+
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    max-width:calc(100vw - 250px) !important;
+    padding: 5rem !important;
+  }
+
+
+  /* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      margin-left: 270px;
+      width: calc(100vw - 270px) !important; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(17, 8, 8,0.9); /* Black w/ opacity */
+  }
+
+  .modal img {
+    width:60%;
+    height:auto;
+  }
+
+  .parallax {
+     max-width: calc(100vw - 270px) !important;
+  }
+}
+
+#home {
+  /* background-color: #1a1f28;
+  background-image: linear-gradient(0deg, #1a1f28 19%, #581b17 100%); */
+  background-color: #000000;
+background-image: linear-gradient(180deg, #000000 25%, #581b17 100%);
+
+
+}
+
+.bg-primary {
+  /* background-color: #C49464 !important; */
+  /* background-color: #1a1f28;
+  background-image: linear-gradient(180deg, #1a1f28 19%, #581b17 100%); */
+  background-color: #000000;
+  background-image: linear-gradient(0deg, #000000 25%, #581b17 100%);
+
+
+}
+
+.text-primary {
+  /*color: #9c260d !important;868e96 gray*/
+  color: #C78577 !important;
+
+}
+
+a {
+  color: #9c260d;
+}
+
+a:hover, a:focus, a:active {
+  color: #824027;
+}
+
+
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50vw;
+    max-width: 700px;
+    background-color: rgba(17, 8, 8,0.9); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    filter: brightness(1.1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    .parallax { background-image: url(../img/paratestvert.png) !important; background-attachment: scroll; background-size: cover;}
+
+
+    /*  .parallax {display:none;} .parallax { background-image: url(../img/mediaparallax.png) !important; background-attachment: scroll; background-size: contain;}
+    */
+    #parallax2 {
+      background-image: url(../img/paratestvert.png) !important;
+    }
+    #parallax3 {
+      background-image: url(../img/paratestvert.png) !important;
+    }
+    #parallax4 {
+      background-image: url(../img/paratestvert.png)  !important;
+    }
+
+    #pagetitle {
+      font-size: 6.5rem;
+      line-height: 5rem;
+    }
+
+    .parallax {
+      /* width: 100vw !important; */
+      width: 100% !important;
+    }
+
+    .sectiontitle {
+      font-size: 4.85rem;
+    }
+}
+
+.css-1go991n {
+  border: 1px solid #7A6D5E !important;
+}
+
+#sideNav {
+  z-index: 900 !important;
+}
+
+.__typeform-embed-mobile-modal-open {
+  width:98vw !important;
+}
+.css-141sqqa {
+  margin: 20px !important;
+}
