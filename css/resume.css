@@ -466,19 +466,19 @@ a:hover, a:focus, a:active {
     .modal-content {
         width: 100%;
     }
-    .parallax { background-image: url(../img/paratestvert.png) !important; background-attachment: scroll; background-size: cover;}
+    .parallax { background-image: url(../img/paratestvert6.png) !important; background-attachment: scroll; background-size: cover;}
 
 
     /*  .parallax {display:none;} .parallax { background-image: url(../img/mediaparallax.png) !important; background-attachment: scroll; background-size: contain;}
     */
     #parallax2 {
-      background-image: url(../img/paratestvert.png) !important;
+      background-image: url(../img/paratestvert6.png) !important;
     }
     #parallax3 {
-      background-image: url(../img/paratestvert.png) !important;
+      background-image: url(../img/paratestvert6.png) !important;
     }
     #parallax4 {
-      background-image: url(../img/paratestvert.png)  !important;
+      background-image: url(../img/paratestvert6.png)  !important;
     }
 
     #pagetitle {
